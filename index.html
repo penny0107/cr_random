@@ -61,16 +61,6 @@
     row(random.apply(null, arr));
   });
 
-  sex.addEventListener('change', function() {
-    arr[2] = sex.checked;
-    row(random.apply(null, arr));
-  });
-
-  count.addEventListener('change', function() {
-    arr[3] = count.checked;
-    row(random.apply(null, arr));
-  });
-
   function row(group) {
     table.innerHTML = '';
     group.forEach(function(team) {
